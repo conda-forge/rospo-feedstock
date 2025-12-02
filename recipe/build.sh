@@ -2,7 +2,7 @@
 
 set -o xtrace -o nounset -o pipefail -o errexit
 
-go build -trimpath -buildmode=pie -o=${PREFIX}/bin/${PKG_NAME} -ldflags="-s -w -X 'github.com/ferama/rospo/cmd.Version=${PKG_VERSION}'"
+go build -o=${PREFIX}/bin/${PKG_NAME} -ldflags="-s -w -X 'github.com/ferama/rospo/cmd.Version=${PKG_VERSION}'"
 go-licenses save . --save_path=license-files
 
 if [[ ${build_platform} == ${target_platform} ]]; then
