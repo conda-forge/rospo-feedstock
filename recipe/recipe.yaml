@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.15.2"
+  version: "0.15.3"
 
 package:
   name: rospo
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/ferama/rospo/archive/v${{ version }}.tar.gz
-  sha256: cc5595c5c7a378774a953f18b156579aa201cbe7589ab7f912e7028df434c3e6
+  sha256: 4c36291969c84159baff261841e6ccd9520e17f8bc9142bf815b9097322a8857
 
 build:
   number: 0
